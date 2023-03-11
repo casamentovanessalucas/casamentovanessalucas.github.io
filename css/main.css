@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    background-color: pink;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: pink;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
