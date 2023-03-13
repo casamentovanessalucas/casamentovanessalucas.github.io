@@ -52,3 +52,24 @@ h1 {
     box-shadow: 0px 0px 4px 1px var(--dourado);   
     text-align: center;
 }
+
+.navbar-brand {
+    text-shadow: 1px 1px rgba(0,0,0,.5);
+}
+
+#presentes .btn.card-footer {
+    background-color: var(--dourado);
+    text-shadow: 1px 1px var(--marsala);
+}
+
+#presentes .card .card-body::before {
+    content: "R$ 1200";
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    transform: translateY(-200%) translateX(100%);
+    border-radius: 10px;
+}
