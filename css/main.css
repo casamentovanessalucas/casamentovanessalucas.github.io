@@ -11,7 +11,9 @@
 :root {
     --marsala: rgb(133, 9, 36);
     --rosa: rgb(218, 86, 154);
+    --rosa2: rgb(197, 42, 91);
     --dourado: rgb(205, 170, 9);
+    font-size: 1.2rem;
 }
 
 body {
@@ -35,9 +37,15 @@ h1 {
 }
 
 #header {
-    background-color: var(--rosa);
+    background-color: var(--rosa2);
     border-bottom: 1px solid var(--dourado);
     box-shadow: 0px 0px 4px 1px var(--dourado);
+}
+
+#logo {
+    width: 66%; 
+    filter: brightness(125%);
+    /* background: radial-gradient(rgba(255,255,255,0.1) 0%, transparent 60%); */
 }
 
 #btn-presentear {
@@ -45,9 +53,11 @@ h1 {
     color: white;
 }
 
+
+
 #footer {
     color: white;
-    background-color: var(--rosa);
+    background-color: var(--rosa2);
     border-top: 1px solid var(--dourado);
     box-shadow: 0px 0px 4px 1px var(--dourado);   
     text-align: center;
@@ -58,18 +68,38 @@ h1 {
 }
 
 #presentes .btn.card-footer {
-    background-color: var(--dourado);
-    text-shadow: 1px 1px var(--marsala);
+    background-color: var(--rosa);
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    /* box-shadow: 0px 0px 4px 1px var(--dourado); */
+    box-shadow: 0px -4px 4px -3px var(--dourado);
 }
 
-#presentes .card .card-body::before {
-    content: "R$ 1200";
+/*
+#presentes .card .card-header::before {
+    content: "R$ " attr(data-price);
     display: inline-block;
     position: absolute;
     background-color: rgba(0,0,0,.5);
     color: white;
     font-weight: bold;
     padding: 0.25em 0.5em;
-    transform: translateY(-200%) translateX(100%);
+    left: 100%;
+    transform: translateX(calc(-100% - 0.5em)) translateY(calc(100% + 0.5em));
     border-radius: 10px;
+    white-space: nowrap;
+}*/
+
+#presentes .card .card-footer::before {
+    content: "R$ " attr(data-price);
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    left: 100%;
+    transform: translateX(calc(-100% - 0.5em)) translateY(calc(-100% - 1em));
+    border-radius: 10px;
+    white-space: nowrap;
 }
