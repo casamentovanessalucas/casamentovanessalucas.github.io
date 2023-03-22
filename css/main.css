@@ -90,7 +90,7 @@ h1 {
     white-space: nowrap;
 }*/
 
-#presentes .card .card-footer::before {
+#presentes .card .card-footer[data-price]::before {
     content: "R$ " attr(data-price);
     display: inline-block;
     position: absolute;
