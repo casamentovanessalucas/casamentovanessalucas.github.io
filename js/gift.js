@@ -18,7 +18,7 @@ const gifts = [
     { name: "Vôo de asa delta", price: 400, img: "./img/asa_delta.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/nCfgawpf3N" },
     { name: "Passeio de trem", price: 500, img: "./img/trem.png", paymentlink: "https://nubank.com.br/pagar/377tv/VlXLMamKp0" },
     { name: "Passeio de balão", price: 600, img: "./img/viagem_de_balao.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/u0B5yfGS3T" },
-    // { name: "xxxxxxx", price: 800, img: "./img/placeholder.png", paymentlink: "https://nubank.com.br/pagar/377tv/RNMI4SrDGC" },
+    { name: "Dia de SPA para o casal", price: 800, img: "./img/spa.jpeg", paymentlink: "https://nubank.com.br/pagar/377tv/TjVY5QSIVc" },
     { name: "Hospedagem", price: 1000, img: "./img/hotel.png", paymentlink: "https://nubank.com.br/pagar/377tv/ECibiz9uPw" },
     { name: "Ar condicionado", price: 1200, img: "./img/ar_condicionado.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/7Hy3Y78gQp" },
     { name: "Passagens aéreas", price: 1500, img: "./img/aviao.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/6GhUXNKbbw" },
