@@ -1,9 +1,9 @@
 const gifts = [
-    // { name: "xxxxxxx", price: 20, img: "./img/placeholder.png", paymentlink: "https://nubank.com.br/pagar/377tv/RNMI4SrDGC" },
+    { name: "Sorvete para dois", price: 20, img: "./img/sorvete.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/EhMGBrheIK" },
     { name: "Cafezinho para dois", price: 25, img: "./img/cafezinho.png", paymentlink: "https://nubank.com.br/pagar/377tv/K45UrmLf5i" },
     { name: "Almoço de rua", price: 30, img: "./img/almoco.png", paymentlink: "https://nubank.com.br/pagar/377tv/1nA352NHM3" },
-    // { name: "xxxxxxx", price: 40, img: "./img/placeholder.png", paymentlink: "https://nubank.com.br/pagar/377tv/RNMI4SrDGC" },
-    // { name: "xxxxxxx", price: 45, img: "./img/placeholder.png", paymentlink: "https://nubank.com.br/pagar/377tv/RNMI4SrDGC" },
+    { name: "Açaí para dois", price: 40, img: "./img/acai.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/IjF2lfwU7a" },
+    { name: "Pipoca e ingressos para o cinema", price: 45, img: "./img/cinema.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/fCOxcDMlnj" },
     { name: "Caixa de doces", price: 50, img: "./img/doces.png", paymentlink: "https://nubank.com.br/pagar/377tv/06wIjkiOJh" },
     { name: "Piquenique no parque", price: 60, img: "./img/picnic.png", paymentlink: "https://nubank.com.br/pagar/377tv/aYv7rX5v4V" },
     // { name: "xxxxxxx", price: 70, img: "./img/placeholder.png", paymentlink: "https://nubank.com.br/pagar/377tv/RNMI4SrDGC" },
@@ -15,13 +15,14 @@ const gifts = [
     { name: "Entradas para o museu", price: 200, img: "./img/museum.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/oWcDpVsZir" },
     { name: "Jantar romântico", price: 250, img: "./img/jantar.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/liQUHr28m6" },
     { name: "Ingressos para show", price: 300, img: "./img/show.png", paymentlink: "https://nubank.com.br/pagar/377tv/0LoTeetvzf" },
-    // { name: "xxxxxxx", price: 400, img: "./img/placeholder.png", paymentlink: "https://nubank.com.br/pagar/377tv/RNMI4SrDGC" },
+    { name: "Vôo de asa delta", price: 400, img: "./img/asa_delta.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/nCfgawpf3N" },
     { name: "Passeio de trem", price: 500, img: "./img/trem.png", paymentlink: "https://nubank.com.br/pagar/377tv/VlXLMamKp0" },
-    // { name: "Passeio aventura", price: 600, img: "./img/placeholder.png", paymentlink: "https://nubank.com.br/pagar/377tv/RNMI4SrDGC" },
+    { name: "Passeio de balão", price: 600, img: "./img/viagem_de_balao.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/u0B5yfGS3T" },
     // { name: "xxxxxxx", price: 800, img: "./img/placeholder.png", paymentlink: "https://nubank.com.br/pagar/377tv/RNMI4SrDGC" },
     { name: "Hospedagem", price: 1000, img: "./img/hotel.png", paymentlink: "https://nubank.com.br/pagar/377tv/ECibiz9uPw" },
-    // { name: "Passeio de buggy", price: 1200, img: "./img/placeholder.png", paymentlink: "https://nubank.com.br/pagar/377tv/RNMI4SrDGC" },
-    { name: "Passagens aéreas para Lua de Mel", price: 1500, img: "./img/aviao.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/6GhUXNKbbw" }
+    { name: "Ar condicionado", price: 1200, img: "./img/ar_condicionado.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/7Hy3Y78gQp" },
+    { name: "Passagens aéreas", price: 1500, img: "./img/aviao.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/6GhUXNKbbw" },
+    { name: "Robô Aspirador", price: 2000, img: "./img/robo_aspirador.jpg", paymentlink: "https://nubank.com.br/pagar/377tv/U1SxkbQpqb" }
 ];
 
 document.querySelector('#presentes .row').insertAdjacentHTML('afterBegin', gifts.sort((a, b) => a.price > b.price ? 1 : -1).map(gift => `
